@@ -1,0 +1,220 @@
+﻿main {
+    margin: 0 auto;
+    padding: 4rem 0;
+    width: 90%;
+    max-width: 60rem;
+}
+
+h1
+{
+    font-family: Courier New, Courier, monospace;
+}
+
+form {
+    box-sizing: border-box;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    border: 4px solid hsl(0, 0%, 90%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.full-width
+{
+    grid-column: span 2;
+}
+
+input[type=text],
+input[type=number],
+select
+{
+    font: 1.25rem / 1.5;
+    font-family: Courier New, Courier, monospace;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+}
+
+.container
+{
+    min-width: 500px;
+}
+
+.navbar
+{
+    background-color: #cacaca;
+    padding: 10px;
+    box-shadow: 0px 1px 2px 2px #cacaca;
+}
+.navbar-brand
+{
+    font-size = 70px;
+    font-weight: 500;
+    color: black;
+    position: center;
+    margin: 0px 30px 5px 5px;
+    font-size: 1.1em;
+    font-family: Courier New, Courier, monospace;
+}
+
+.navbar > ul
+{
+    list-style-type: none;
+    width: 100%;
+}
+
+.navbar > ul > li
+{
+    width: 100%;
+}
+
+.navbar > ul > li > a:link, .navbar > ul > li > a:visited
+{
+    padding: 5px 50px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 1s ease-out;
+    display: inline-block;
+    margin: 0px -40px;
+    border: groove;
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+.navbar > ul > li > a:hover
+{
+    background-color: #ffffff;
+    color: #086581;
+}
+
+.table
+{
+    border-collapse: collapse;
+    border: 1px solid #ffffff;
+    padding: 5px;
+    box-shadow: 0px 0px 4px 2px #e4e4e4;
+    margin: 10px 0px;
+    margin: auto;
+}
+
+.table thead
+{
+    background-color: #727774;
+    color: #ffffff;
+}
+
+.table thead th
+{
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.table tbody td
+{
+    padding: 6px 10px;
+}
+
+.table tbody tr
+{
+    transition: background-color 0.3s, color 0.2s;
+    background-color: #efefef;
+    border-bottom: 1px solid #ffffff;
+}
+
+.comp
+{
+    filter: opacity(50%);
+    background-color: rgb(82, 217, 106);
+}
+
+.table tbody tr:hover
+{
+    background-color: #cacaca;
+    color: #827676;
+}
+
+input[type=text]
+input[type=number]
+{
+    padding: 10px;
+    border: 0;
+    margin: 10px 0;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    width: 100%;
+}
+
+input[type=checkbox]
+{
+    height: 1.5em;
+    width: 1.5em;
+    vertical-align: middle;
+}
+
+.small-label
+{
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 0.25rem;
+    margin-right: 1.5rem;
+    font: 1.00rem;
+    font-family: Courier New, Courier, monospace;
+}
+
+button 
+{
+    cursor: pointer;
+    appearance: none;
+    margin: 2px;
+    padding: 10px;
+    border: none;
+    background-color: dodgerblue;
+    color: #fff;
+    font-weight: 300;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.rounded-input
+{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.flex
+{
+    display: flex;
+    gap: 10px 20px;
+    align-content: center;
+    align-items: center;
+}
+
+.flex > div
+{
+    padding: 50px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 3px 2px #ffffff;
+}
+.w-100
+{
+    width: 100%;
+}
+
+.w-50
+{
+    width: 50%;
+}
+
+.w-25
+{
+    width: 25%;
+}
+
+.page-content
+{
+    padding: 10px;
+    min-height: 50%
+}

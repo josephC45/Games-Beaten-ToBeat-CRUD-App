@@ -1,0 +1,48 @@
+﻿@model GameUpdateRequest
+@{
+    ViewBag.Title = "Update Game";
+}
+<div class="w-50">
+    <form asp-controller="Hobbies" asp-action="Edit" method="post">
+        <h1>Update Game</h1><br />
+        <input type="hidden" asp-for="GameID" />
+        <div>
+            <label asp-for="GameTitle" class="small-label">Game Title:</label>
+            <div>
+                <input asp-for="GameTitle"/>
+                <span asp-validation-for="GameTitle" class="text-red"></span>
+            </div>
+        </div>
+        <div>
+            <label asp-for="TotalHoursToBeat" class="small-label">Total Hours To Beat:</label>
+            <div>
+                <input asp-for="TotalHoursToBeat"/>
+                <span asp-validation-for="TotalHoursToBeat" class="text-red"></span>
+            </div>
+        </div>
+        <div>
+            <label asp-for="RemainingHoursToBeat" class="small-label">Hours Left in Game:</label>
+            <div>
+                <input asp-for="RemainingHoursToBeat"/>
+                <span asp-validation-for="RemainingHoursToBeat" class="text-red"></span>
+            </div>
+        </div>
+        <div>
+            <label asp-for="GameRating" class="small-label">Game Rating:</label>
+            <div>
+                <input asp-for="GameRating"/>
+                <span asp-validation-for="GameRating" class="text-red"></span>
+            </div>
+        </div>
+        <div class="full-width">
+            <label asp-for="GameCompleted" class="small-label">Has the Game Been Completed?</label>
+            <div>
+                <input type="checkbox" asp-for="GameCompleted" value="true"/>
+                <span asp-validation-for="GameCompleted" class="text-red"></span>
+            </div>
+        </div>
+        <div class="full-width">
+            <button type="submit">Update Game</button><br />
+        </div>
+    </form>
+</div>

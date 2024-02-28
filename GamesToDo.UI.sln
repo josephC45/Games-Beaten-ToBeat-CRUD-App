@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamesToDo.UI", "GamesToDo.UI\GamesToDo.UI.csproj", "{D8FE4BB4-D336-4648-AEA8-0F11D2A34A8E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{79FFEB4D-1088-4810-A100-B17669FF8B1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameToDo.Core", "GameToDo.Core\GameToDo.Core.csproj", "{A51BCD5E-CE77-4A48-914B-D22BAABC2838}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamesToDo.Infrastructure", "GamesToDo.Infrastructure\GamesToDo.Infrastructure.csproj", "{0F36B325-A77A-4454-A972-F193A22E4DDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8FE4BB4-D336-4648-AEA8-0F11D2A34A8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8FE4BB4-D336-4648-AEA8-0F11D2A34A8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8FE4BB4-D336-4648-AEA8-0F11D2A34A8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8FE4BB4-D336-4648-AEA8-0F11D2A34A8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A51BCD5E-CE77-4A48-914B-D22BAABC2838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A51BCD5E-CE77-4A48-914B-D22BAABC2838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A51BCD5E-CE77-4A48-914B-D22BAABC2838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A51BCD5E-CE77-4A48-914B-D22BAABC2838}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F36B325-A77A-4454-A972-F193A22E4DDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F36B325-A77A-4454-A972-F193A22E4DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F36B325-A77A-4454-A972-F193A22E4DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F36B325-A77A-4454-A972-F193A22E4DDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D8FE4BB4-D336-4648-AEA8-0F11D2A34A8E} = {79FFEB4D-1088-4810-A100-B17669FF8B1D}
+		{A51BCD5E-CE77-4A48-914B-D22BAABC2838} = {79FFEB4D-1088-4810-A100-B17669FF8B1D}
+		{0F36B325-A77A-4454-A972-F193A22E4DDC} = {79FFEB4D-1088-4810-A100-B17669FF8B1D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1783494-C02E-48BE-9245-B30016CE136A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,53 @@
+﻿@model IEnumerable<GameResponse>
+@{
+    ViewBag.Title = "Home";
+}
+<form asp-controller="Hobbies" asp-action="Index" method="get">
+    <h1>Video Games To Complete</h1>
+    <div>
+        <div>
+            <table class="table w-100">
+                <thead>
+                    <tr>
+                        <th>Game Title</th>
+                        <th>Total Hours To Beat</th>
+                        <th>Remaining Hours to Beat</th>
+                        <th>Game Rating</th>
+                        <th>Game Completed</th>
+                        <th>Update Game</th>
+                        <th>Delete Game</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(GameResponse game in Model)
+                    {
+                        @if (game.GameCompleted)
+                        {
+                            <tr>
+                                <td class="comp">@game.GameTitle</td>
+                                <td class="comp">@game.TotalHoursToBeat</td>
+                                <td class="comp">@game.RemainingHoursToBeat</td>
+                                <td class="comp">@game.GameRating</td>
+                                <td class="comp">@game.GameCompleted</td>
+                                <td><a asp-controller="Hobbies" asp-action="Update" asp-route-GameID="@game.GameID">Update</a></td>
+                                <td><a asp-controller="Hobbies" asp-action="Delete" asp-route-GameID="@game.GameID">Delete</a></td>
+                            </tr>
+                        }else
+                        {
+                            <tr>
+                                <td>@game.GameTitle</td>
+                                <td>@game.TotalHoursToBeat</td>
+                                <td>@game.RemainingHoursToBeat</td>
+                                <td>@game.GameRating</td>
+                                <td>@game.GameCompleted</td>
+                                <td><a asp-controller="Hobbies" asp-action="Update" asp-route-GameID="@game.GameID">Update</a></td>
+                                <td><a asp-controller="Hobbies" asp-action="Delete" asp-route-GameID="@game.GameID">Delete</a></td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</form>
+
